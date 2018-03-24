@@ -30,7 +30,7 @@ Running a full node helps the Worktips network so please consider compiling the 
 ## How to compile
 
 
-### Compile on Windows 7/10
+### Compile on Windows 7/10 (64 bit)
 
 **1. Fork the coin**
 
@@ -39,30 +39,41 @@ Running a full node helps the Worktips network so please consider compiling the 
 
 **2. Install dependencies**
 
-Dependencies: Microsoft Visual Studio 14 2015, CMake 2.8.6 or later, and Boost 1.55. 
+Recommended: Microsoft Visual Studio 14 2015, CMake 2.8.6 or later, and Boost 1.55 or later. 
 
 You may download them from:
 - http://www.microsoft.com/
 - http://www.cmake.org/
 - http://www.boost.org/
 
-**3. Configure and generate the project files with CMake GUI**
 
-- start CMake GUI and navigate to the repository folder using the field 'Where is the source code:'
-- in the field 'Where to build the binaries:' specify the build folder location
-- click the 'Configure' button to start the configuration
-- select 'Visual Studio 14 2015 Win64' option.
-- click the 'Finish' button to run the configuration
-- after the configuration is done, click the 'Generate' button to generate your project files
-- after successfull generation click the button 'Open project' to start building the binaries
+**3. BOOST (troubleshooting)**
 
-**4. Build the binaries using Microsoft Visual Studio 14 2015**
+Navigate your browser to: https://sourceforge.net/projects/boost/files/boost-binaries/1.65.0/ and download the boost libraries 1.6.5 for your Visual Studio version. For this tutorial we are using Microsoft Visual Studio 14 2015 on 64 bit Windows platform.
+
+Download and install Boost 1.65 for MSVC 14 (64 bit): https://sourceforge.net/projects/boost/files/boost-binaries/1.65.0/boost_1_65_0-msvc-14.0-64.exe/download
+
+Set your Windows environment variable _BOOST_ROOT_ to _C:\local\boost_1_65_0' where C: can be case specific and need to be adjusted to your own hard drive letter_.
+
+
+**4. Configure and generate the project files**
+
+- start CMake GUI and navigate to the repository folder using the field _Where is the source code:_
+- in the field _Where to build the binaries:_ specify the build folder location
+- click the _Configure_ button to start the configuration
+- select _Visual Studio 14 2015 Win64_ option.
+- click the _Finish_ button to run the configuration
+- after the configuration is done, click the _Generate_ button to generate your project files
+- after successfull generation click the button _Open project_ to start building the binaries
+
+**5. Build**
 
 - CMake GUI will open the project in the Microsoft Visual Studio you selected for the configuration
 - wait for the Microsoft Visual Studio to scan and prepare all of the files for the project
-- the scan is finished when the message 'Ready' appears
-- click the 'Build' button from the main menu
+- the scan is finished when the message _Ready_ appears
+- click the _Build_ button from the main menu
 - your binaries are located in either the `src/release` or the `src/debug` sub folders depending on your MSVC configuration
+
 
 ### Compile on Linux Ubuntu 14
 
