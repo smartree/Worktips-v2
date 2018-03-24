@@ -219,7 +219,7 @@ _Your executables will be located in `build/release/src` folder._
 
 **_Warning!_ The following procedure will uninstall your existing boost version and install the minimum version needed to compile successfully.**
 
-- Uninstall your active boost version 
+- _UNINSTALL_ your active boost version 
 
 ``
 sudo apt-get –purge remove libboost-dev
