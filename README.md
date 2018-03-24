@@ -97,6 +97,10 @@ make all
 **3. Get the coin**
 
 ``
+cd
+``
+
+``
 git clone https://github.com/Vordas/Worktips-v2.git worktips
 ``
 
