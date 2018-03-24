@@ -64,7 +64,7 @@ You may download them from:
 - click the 'Build' button from the main menu
 - your binaries are located in either the `src/release` or the `src/debug` sub folders depending on your MSVC configuration
 
-### Compile on Linux Ubuntu
+### Compile on Linux Ubuntu 14/16
 
 **1. Install dependencies**
 
