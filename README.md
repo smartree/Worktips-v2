@@ -30,7 +30,7 @@ Running a full node helps the Worktips network so please consider compiling the 
 ## How to compile
 
 
-### Compile on Windows
+### Compile on Windows 7/10
 
 **1. Fork the coin**
 
