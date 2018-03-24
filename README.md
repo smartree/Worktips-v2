@@ -64,7 +64,85 @@ You may download them from:
 - click the 'Build' button from the main menu
 - your binaries are located in either the `src/release` or the `src/debug` sub folders depending on your MSVC configuration
 
-### Compile on Linux Ubuntu 14/16
+### Compile on Linux Ubuntu 14
+
+**1. Install dependencies**
+
+- run an update
+
+``
+sudo apt-get update
+``
+
+- get all dependencies
+
+``
+sudo apt-get install -y build-essential python-dev git cmake libboost1.55-all-dev  libgflags-dev libsnappy-dev zlib1g-dev libbz2-dev libgflags-dev libgflags2  gcc-4.8 g++-4.8
+``
+
+**2. Install RocksDB database**
+
+``
+git clone https://github.com/facebook/rocksdb.git
+``
+``
+cd rocksdb
+``
+``
+make all
+``
+
+**3. Get the coin**
+
+``
+git clone https://github.com/Vordas/Worktips-v2.git worktips
+``
+
+**4. CHMOD**
+
+- navigate to:
+
+``
+cd worktips/external/rocksdb/build_tools
+``
+
+- execute the following commands:
+
+``
+chmod +x build_detect_platform
+``
+
+``
+chmod +x version.sh
+``
+
+**5. Build executables**
+
+- Navigate back to repo folder 
+
+``
+cd
+``
+
+``
+cd worktips
+``
+
+- Export flags
+
+``
+export CXXFLAGS="-std=gnu++11"
+``
+
+- Make/Build
+
+``
+make
+``
+
+Your executables will be located in `build/release/src` folder.
+
+### Compile on Linux Ubuntu 16
 
 **1. Install dependencies**
 
@@ -80,9 +158,7 @@ sudo apt-get update
 sudo apt-get -y install build-essential python-dev gcc-4.9 g++-4.9 git cmake libboost1.58-all-dev librocksdb-dev
 ``
 
-**2. Fork the coin**
-
-- fork the repo
+**2. Get the coin**
 
 ``
 git clone https://github.com/Vordas/Worktips-v2.git worktips
