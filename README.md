@@ -85,9 +85,11 @@ sudo apt-get install -y build-essential python-dev git cmake libboost1.55-all-de
 ``
 git clone https://github.com/facebook/rocksdb.git
 ``
+
 ``
 cd rocksdb
 ``
+
 ``
 make all
 ``
