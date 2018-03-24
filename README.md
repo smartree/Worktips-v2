@@ -100,6 +100,8 @@ Execute the following commands:
 
 ``
 chmod +x build_detect_platform
+``
+``
 chmod +x version.sh
 ``
 
@@ -109,6 +111,8 @@ Navigate back to repo folder
 
 ``
 cd
+``
+``
 cd worktips
 ``
 
