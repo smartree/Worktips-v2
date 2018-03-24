@@ -56,7 +56,7 @@ You may download them from:
 - after the configuration is done, click the 'Generate' button to generate your project files
 - after successfull generation click the button 'Open project' to start building the binaries
 
-**4. Build the binaries using Microsoft Visual Studio 14 2015 **
+**4. Build the binaries using Microsoft Visual Studio 14 2015**
 
 - CMake GUI will open the project in the Microsoft Visual Studio you selected for the configuration
 - wait for the Microsoft Visual Studio to scan and prepare all of the files for the project
