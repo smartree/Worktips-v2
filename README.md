@@ -146,7 +146,7 @@ export CXXFLAGS="-std=gnu++11"
 make
 ``
 
-Your executables will be located in `build/release/src` folder.
+_Your executables will be located in `build/release/src` folder._
 
 ### Compile on Linux Ubuntu 16
 
@@ -212,10 +212,10 @@ export CXXFLAGS="-std=gnu++11"
 make
 ``
 
-Your executables will be located in `build/release/src` folder.
+_Your executables will be located in `build/release/src` folder._
 
 
-**5. BOOST issue resolving**
+### BOOST issue resolving
 
 **_Warning!_ The following procedure will uninstall your existing boost version and install the minimum version needed to compile successfully.**
 
