@@ -151,14 +151,6 @@ sudo apt-get –purge remove libboost-all-dev
 sudo apt-get –purge autoremove libboost-all-dev
 ``
 
-``
-sudo add-apt-repository ppa:boost-latest/ppa
-``
-
-``
-sudo apt-get update
-``
-
 - Install BOOST 1.55
 
 ``
@@ -180,6 +172,9 @@ sudo apt-get install libboost-all-dev
 ``
 dpkg -s libboost-dev | grep Version
 ``
+
+or
+
 
 ``
 cat /usr/include/boost/version.hpp | grep “BOOST_LIB_VERSION”
