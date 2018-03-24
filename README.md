@@ -68,13 +68,13 @@ You may download them from:
 
 **1. Install dependencies**
 
-Run an update
+- run an update
 
 ``
 sudo apt-get update
 ``
 
-Get all the deps
+- get all dependencies
 
 ``
 sudo apt-get -y install build-essential python-dev gcc-4.9 g++-4.9 git cmake libboost1.58-all-dev librocksdb-dev
@@ -82,7 +82,7 @@ sudo apt-get -y install build-essential python-dev gcc-4.9 g++-4.9 git cmake lib
 
 **2. Fork the coin**
 
-Fork the repo
+- fork the repo
 
 ``
 git clone https://github.com/Vordas/Worktips-v2.git worktips
@@ -90,13 +90,13 @@ git clone https://github.com/Vordas/Worktips-v2.git worktips
 
 **3. CHMOD**
 
-Navigate to:
+- navigate to:
 
 ``
 cd worktips/external/rocksdb/build_tools
 ``
 
-Execute the following commands:
+- execute the following commands:
 
 ``
 chmod +x build_detect_platform
@@ -108,7 +108,7 @@ chmod +x version.sh
 
 **4. Build executables**
 
-Navigate back to repo folder 
+- Navigate back to repo folder 
 
 ``
 cd
@@ -118,16 +118,69 @@ cd
 cd worktips
 ``
 
-Export flags
+- Export flags
 
 ``
 export CXXFLAGS="-std=gnu++11"
 ``
 
-Make/Build
+- Make/Build
 
 ``
 make
 ``
 
 Your executables will be located in `build/release/src` folder.
+
+
+**5. BOOST issue resolving**
+
+**_Warning!_ The following procedure will uninstall your existing boost version and install the minimal version needed to compile successfully.**
+
+- Uninstall your active boost version 
+
+``
+sudo apt-get –purge remove libboost-dev
+``
+
+``
+sudo apt-get –purge remove libboost-all-dev
+``
+
+``
+sudo apt-get –purge autoremove libboost-all-dev
+``
+
+``
+sudo add-apt-repository ppa:boost-latest/ppa
+``
+
+``
+sudo apt-get update
+``
+
+- Install BOOST 1.55
+
+``
+sudo apt-get install libboost1.55-all-dev
+``
+
+- Install BOOST 1.58 from package in Ubuntu 16.04
+
+``
+sudo apt-get install libboost-dev
+``
+
+``
+sudo apt-get install libboost-all-dev
+``
+
+- Verify installed Boost version
+
+``
+dpkg -s libboost-dev | grep Version
+``
+
+``
+cat /usr/include/boost/version.hpp | grep “BOOST_LIB_VERSION”
+``
