@@ -239,6 +239,8 @@ sudo apt-get –purge autoremove libboost-all-dev
 sudo apt-get install libboost1.55-all-dev
 ``
 
+or
+
 - Install BOOST 1.58 from package in Ubuntu 16.04
 
 ``
