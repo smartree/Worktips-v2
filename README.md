@@ -80,7 +80,7 @@ sudo apt-get update
 sudo apt-get install -y build-essential python-dev git cmake libboost1.55-all-dev  libgflags-dev libsnappy-dev zlib1g-dev libbz2-dev libgflags-dev libgflags2  gcc-4.8 g++-4.8
 ``
 
-**2. Install RocksDB database (very long compilation)**
+**2. Install RocksDB database (long compilation)**
 
 ``
 git clone https://github.com/facebook/rocksdb.git
@@ -122,7 +122,7 @@ chmod +x build_detect_platform
 chmod +x version.sh
 ``
 
-**5. Build executables**
+**5. Build executables (long compilation)**
 
 - Navigate back to repo folder 
 
