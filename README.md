@@ -125,17 +125,3 @@ make
 ``
 
 Your executables will be located in `build/release/src` folder.
-
-**4. Run the node**
-
-Navigate to folder with executables 
-
-``
-cd worktips/build/release/src
-``
-
-Start the client/daemon 
-
-``
-./worktipsd
-``
