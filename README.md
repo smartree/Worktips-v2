@@ -233,15 +233,15 @@ _Your executables will be located in `build/release/src` folder._
 - _UNINSTALL_ your active boost version 
 
 ``
-sudo apt-get –purge remove libboost-dev
+sudo apt-get remove libboost-dev
 ``
 
 ``
-sudo apt-get –purge remove libboost-all-dev
+sudo apt-get remove libboost-all-dev
 ``
 
 ``
-sudo apt-get –purge autoremove libboost-all-dev
+sudo apt-get autoremove libboost-all-dev
 ``
 
 - Install BOOST 1.55
