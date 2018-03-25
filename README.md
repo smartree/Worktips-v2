@@ -244,7 +244,7 @@ sudo apt-get remove libboost-all-dev
 sudo apt-get autoremove libboost-all-dev
 ``
 
-- Install BOOST 1.55
+- Install BOOST 1.55 on Linux Ubuntu 14
 
 ``
 sudo apt-get install libboost1.55-all-dev
@@ -252,7 +252,7 @@ sudo apt-get install libboost1.55-all-dev
 
 or
 
-- Install BOOST 1.58 from package in Ubuntu 16.04
+- Install BOOST 1.58 on Linux Ubuntu 16
 
 ``
 sudo apt-get install libboost-dev
