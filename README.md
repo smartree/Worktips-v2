@@ -396,19 +396,19 @@ http://forknote.net/documentation/daemon/
 
 ### Useful examples
 
-**Start the daemon in RPC mode on Linux Ubuntu 14 VPS (for pool owners)**
+**Start the daemon in RPC mode on Linux**
 
 ``
 ./worktipsd --rpc-bind-port=18238
 ``
 
-**Start the wallet in RPC mode on Linux Ubuntu 14 VPS (for pool owners)**
+**Start the wallet in RPC mode on Linux**
 
 ``
 ./simplewallet --wallet-file YOURWALLETNAME --password YOURWALLETPASSWORD --rpc-bind-port 8082  --daemon-port 18238
 ``
 
-**Reset the wallet in RPC mode on Linux Ubuntu 14 VPS (for pool owners)**
+**Reset the wallet in RPC mode on Linux**
 
 ``
 ./simplewallet --command reset --wallet-file YOURWALLETNAME --password YOURWALLETPASSWORD
@@ -435,7 +435,7 @@ sudo rm -rf ~/.worktips/
 - Windows: 
 navigate to your user folder. Find the appData folder. Open the 'appData' folder and find the folder 'worktips' inside. Delete the 'worktips' folder. Re-start your client to re-sync from the scratch. If you can't find the 'appData' folder turn the 'Show hidden files and folders' option in your Windows.
 
-**Downloading the blockchain folder from a Linux Ubuntu 14 VPS (for pool owners)**
+**Downloading the blockchain folder from a Linux**
 
 - Install dependencies
 
@@ -461,13 +461,13 @@ cp ~/worktips.zip /var/www/html
 http://YOURVPSIPADDRESS/worktips.zip
 ``
 
-**Restarting redis server on Linux Ubuntu 14 VPS (for pool owners)**
+**Restarting redis server on Linux**
 
 ``
 /etc/init.d/redis-server restart
 ``
 
-**Adding swap file on Linux Ubuntu VPS (for pool owners)**
+**Adding swap file on Linux**
 
 - Ubuntu 14: https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04
 - Ubuntu 16: https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04
