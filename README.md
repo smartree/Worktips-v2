@@ -274,3 +274,200 @@ or
 ``
 cat /usr/include/boost/version.hpp | grep “BOOST_LIB_VERSION”
 ``
+
+### Run the node
+
+Navigate to folder with executables 
+
+``
+cd worktips/build/release/src
+``
+
+Start the client/daemon 
+
+``
+./worktipsd
+``
+
+
+### Client/daemon command line options
+
+- A name of log file that you want to use for logging.
+
+``
+--log-file
+``
+
+- Level of logging. Default is 1.
+
+``
+--log-level
+``
+
+- Disable daemon console commands.
+
+``
+--no-console
+``
+
+
+- Used to deploy test nets. Checkpoints and hardcoded seeds are ignored, network id is –data-dir flag. The wallet must be launched with –testnet flag.
+
+``
+--testnet
+``
+
+- Specify ip to bind rpc server.
+
+``
+--rpc-bind-ip
+``
+
+- Specify port to bind rpc server.
+
+``
+--rpc-bind-port
+``
+
+- Interface for p2p network protocol.
+
+``
+--p2p-bind-ip
+``
+
+- Port for p2p network protocol.
+
+``
+--p2p-bind-port
+``
+
+- External port for p2p network protocol (if port forwarding used with NAT).
+
+``
+--p2p-external-port
+``
+
+- Manually add peer to local peerlist
+
+``
+--add-peer
+``
+
+ 
+- Specify list of peers to connect to and attempt to keep the connection open.
+
+``
+--add-priority-node
+``
+ 
+- Specify list of peers to connect to only. If this option is given the options add-priority-node and seed-node are ignored.
+
+``
+--add-exclusive-node
+``
+ 
+- Connect to a node to retrieve peer addresses, and disconnect.
+
+``
+--seed-node
+``
+ 
+- Do not announce yourself as peerlist candidate.
+
+``
+--hide-my-port
+``
+ 
+- Specify file for extra messages to include into coinbase transactions.
+
+``
+--extra-messages-file
+``
+ 
+- Enable blockchain indexes.
+
+``
+--enable-blockchain-indexes
+``
+
+Full list of command line options can be found here: 
+http://forknote.net/documentation/daemon/
+
+
+### Useful examples
+
+**Start the daemon in RPC mode on Linux Ubuntu 14 VPS (for pool owners)**
+
+``
+./worktipsd --rpc-bind-port=18238
+``
+
+**Start the wallet in RPC mode on Linux Ubuntu 14 VPS (for pool owners)**
+
+``
+./simplewallet --wallet-file YOURWALLETNAME --password YOURWALLETPASSWORD --rpc-bind-port 8082  --daemon-port 18238
+``
+
+**Reset the wallet in RPC mode on Linux Ubuntu 14 VPS (for pool owners)**
+
+``
+./simplewallet --command reset --wallet-file YOURWALLETNAME --password YOURWALLETPASSWORD
+``
+
+**Start the daemon in exclusive node mode**
+
+``
+./worktipsd --add-exclusive-node=45.76.61.98:17239
+``
+
+**Start the daemon with bind ports and a specific seed node**
+
+``
+./worktipsd  --rpc-bind-port=18238 --p2p-bind-port=17239 seed-node=45.76.61.98:17239
+``
+
+**Deleting the blockchain folder (for clean re-sync)**
+
+- Linux
+``
+sudo rm -rf ~/.worktips/
+``
+- Windows: 
+navigate to your user folder. Find the appData folder. Open the 'appData' folder and find the folder 'worktips' inside. Delete the 'worktips' folder. Re-start your client to re-sync from the scratch. If you can't find the 'appData' folder turn the 'Show hidden files and folders' option in your Windows.
+
+**Downloading the blockchain folder from a Linux Ubuntu 14 VPS (for pool owners)**
+
+- Install dependencies
+
+``
+sudo apt-get install zip apache2
+``
+
+- Compress the blockchain folder
+
+``
+sudo zip -r worktips.zip ~/.worktips/
+``
+
+- Copy the blockchain folder to apache folder
+
+``
+cp ~/worktips.zip /var/www/html
+``
+
+- Download the compressed blockchain folder using the below address in your web browser
+
+``
+http://YOURVPSIPADDRESS/worktips.zip
+``
+
+**Restarting redis server on Linux Ubuntu 14 VPS (for pool owners)**
+
+``
+/etc/init.d/redis-server restart
+``
+
+**Adding swap file on Linux Ubuntu VPS (for pool owners)**
+
+- Ubuntu 14: https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04
+- Ubuntu 16: https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04
