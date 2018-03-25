@@ -226,7 +226,7 @@ make
 _Your executables will be located in `build/release/src` folder._
 
 
-### BOOST issue resolving
+**5. BOOST issue resolving**
 
 **_Warning!_ The following procedure will uninstall your existing boost version and install the minimum version needed to compile successfully.**
 
