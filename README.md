@@ -433,7 +433,7 @@ http://forknote.net/documentation/daemon/
 sudo rm -rf ~/.worktips/
 ``
 - Windows: 
-navigate to your user folder. Find the appData folder. Open the 'appData' folder and find the folder 'worktips' inside. Delete the 'worktips' folder. Re-start your client to re-sync from the scratch. If you can't find the 'appData' folder turn the 'Show hidden files and folders' option in your Windows.
+navigate to your user folder. Find the appData folder. Open the 'appData' folder and find the folder 'roaming' inside. Inside the 'roaming' folder - delete the 'worktips' sub folder. Re-start your client to re-sync from the scratch. If you can't find the 'appData' folder turn the 'Show hidden files and folders' option in your Windows.
 
 **Downloading the blockchain folder from a Linux**
 
