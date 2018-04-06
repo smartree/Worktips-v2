@@ -437,7 +437,7 @@ navigate to your 'users' folder. Enter your 'username' folder. Find the 'appData
 
 More help on deleting the blockchain folder (bitcoin example, but the locations are the same): https://bitcoin.stackexchange.com/questions/4006/where-is-the-data-folder-for-bitcoin-qt
 
-**Downloading the blockchain folder from a Linux**
+**Downloading the blockchain folder from a Linux VPS**
 
 - Install dependencies
 
